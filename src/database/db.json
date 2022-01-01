@@ -1,11 +1,11 @@
 {
-    "posts": [
-      {
-        "id" : 0,
-        "title": "First post of the year!",
-        "content" : "Happy new year!",
-        "author_id": 0,
-        "author_name": "Arthur Cabral"
-      }
-    ]
+	"posts": [
+		{
+			"id": 0,
+			"title": "First post of the year!",
+			"content": "Happy new year!",
+			"author_id": 0,
+			"author_name": "Arthur Cabral"
+		}
+	]
 }

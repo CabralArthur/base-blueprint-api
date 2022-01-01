@@ -1,4 +1,4 @@
-import jsonServer from 'json-server';
+import jsonServer from "json-server";
 
 class App {
 	constructor() {
@@ -6,19 +6,19 @@ class App {
 	}
 
 	setup() {
-        try {
-            const server = jsonServer.create();
-            const router = jsonServer.router('./src/database/db.json');
-            const middlewares = jsonServer.defaults();
+		try {
+			const server = jsonServer.create();
+			const router = jsonServer.router("./src/database/db.json");
+			const middlewares = jsonServer.defaults();
 
-            server.use(middlewares);
-            server.use(router);
-            server.listen(this.port);
+			server.use(middlewares);
+			server.use(router);
+			server.listen(this.port);
 
-            console.log('Success!')
-        } catch (error) {
-            console.log('An error ocurred!', error)
-        }
+			console.log("Success!");
+		} catch (error) {
+			console.log("An error ocurred!", error);
+		}
 	}
 
 	start() {
