@@ -14,12 +14,12 @@ class App {
 		});
 
 		const filesToConvert = jsonConvertedFiles.reduce((previousURL, currentURL) => {
-			previousURL = {
+			const files = {
 				...previousURL,
 				...currentURL
 			}
 
-			return previousURL;
+			return files;
 		}, {});
 
 		return fs.writeFileSync('./src/database/db.json', JSON.stringify(filesToConvert));
