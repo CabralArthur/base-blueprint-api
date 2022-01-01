@@ -8,25 +8,21 @@ class App {
 	mountServer() {
 		const files = fs.readdirSync('./src/database/projects/');
 
-		const filesBuffered = files.map(fileName => {
+		const jsonConvertedFiles = files.map(fileName => {
 			const fileJsonBuffer = fs.readFileSync(`./src/database/projects/${fileName}`);
-			return fileJsonBuffer;
+			return JSON.parse(fileJsonBuffer);
 		});
 
-		const filesToConvert = filesBuffered.map(file => {
-			return JSON.parse(file);
-		});
-
-		const result = filesToConvert.reduce((previous, current) => {
-			previous = {
-				...previous,
-				...current
+		const filesToConvert = jsonConvertedFiles.reduce((previousURL, currentURL) => {
+			previousURL = {
+				...previousURL,
+				...currentURL
 			}
 
-			return previous;
+			return previousURL;
 		}, {});
 
-		return fs.writeFileSync('./src/database/db.json', JSON.stringify(result));
+		return fs.writeFileSync('./src/database/db.json', JSON.stringify(filesToConvert));
 	}
 
 	setup() {
