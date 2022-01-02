@@ -1,7 +1,7 @@
 {
-  "name": "base-fake-api",
+  "name": "base-blueprint-api",
   "version": "1.0.0",
-  "description": "Repository to storage my fake api`s with JSON server.",
+  "description": "Repository to storage my blueprint api`s with JSON server.",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CabralArthur/base-fake-api.git"
+    "url": "git+https://github.com/CabralArthur/base-blueprint-api.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CabralArthur/base-fake-api/issues"
+    "url": "https://github.com/CabralArthur/base-blueprint-api/issues"
   },
-  "homepage": "https://github.com/CabralArthur/base-fake-api#readme",
+  "homepage": "https://github.com/CabralArthur/base-blueprint-api#readme",
   "dependencies": {
     "json-server": "^0.17.0"
   },
