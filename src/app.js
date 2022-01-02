@@ -13,7 +13,7 @@ class App {
 			return JSON.parse(fileJsonBuffer);
 		});
 
-		const filesToConvert = jsonConvertedFiles.reduce((previousURL, currentURL) => {
+		const filesToJoin = jsonConvertedFiles.reduce((previousURL, currentURL) => {
 			const files = {
 				...previousURL,
 				...currentURL
@@ -22,7 +22,7 @@ class App {
 			return files;
 		}, {});
 
-		return fs.writeFileSync('./src/database/db.json', JSON.stringify(filesToConvert));
+		return fs.writeFileSync('./src/database/db.json', JSON.stringify(filesToJoin));
 	}
 
 	setup() {
