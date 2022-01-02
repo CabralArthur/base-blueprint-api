@@ -1,10 +1,10 @@
-# Base Blueprint API's
+# Base Mock API's
 
 <!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
-![GitHub repo top language](https://img.shields.io/github/languages/top/CabralArthur/base-blueprint-api)
-![GitHub contributors](https://img.shields.io/github/contributors/CabralArthur/base-blueprint-api)
-![GitHub stars](https://img.shields.io/github/stars/CabralArthur/base-blueprint-api?style=social)
-![GitHub forks](https://img.shields.io/github/forks/CabralArthur/base-blueprint-api?style=social)
+![GitHub repo top language](https://img.shields.io/github/languages/top/CabralArthur/base-mock-api)
+![GitHub contributors](https://img.shields.io/github/contributors/CabralArthur/base-mock-api)
+![GitHub stars](https://img.shields.io/github/stars/CabralArthur/base-mock-api?style=social)
+![GitHub forks](https://img.shields.io/github/forks/CabralArthur/base-mock-api?style=social)
 
 Project made 100% with JavaScript, with the objective of creating endpoints to use in projects.
 
@@ -15,14 +15,14 @@ Before you begin, ensure you have met the following requirements:
 
 - [Node.js](https://nodejs.org/en/)
 
-## Installing Base Blueprint API's
+## Installing Base Mock API's
 
 To install the project for both Windows and macOS, you must complete the following steps:
 
 Windows, Linux and macOS:
 
 ```shell
-git clone https://github.com/CabralArthur/base-blueprint-api.git
+git clone https://github.com/CabralArthur/base-mock-api.git
 
 cd [path-of-your-project]
 
@@ -41,7 +41,7 @@ cd [path-of-your-clone]
 npm start [<-- Run this command in terminal]
 ```
 
-## Contributing to Blueprint API's
+## Contributing to Mock API's
 
 To contribute to the projet, follow these steps:
 
@@ -67,4 +67,4 @@ If you want to contact me you can reach me at arthurcabral.dev@gmail.com.
 ## License
 <!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
-This project uses the following license: [MIT License](https://github.com/CabralArthur/base-blueprint-api/blob/main/LICENSE).
+This project uses the following license: [MIT License](https://github.com/CabralArthur/base-mock-api/blob/main/LICENSE).
