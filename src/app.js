@@ -2,7 +2,7 @@ import fs from 'fs';
 import jsonServer from "json-server";
 class App {
 	constructor() {
-		this.port = process.env.PORT || 4000;
+		this.port = process.env.PORT || 3000;
 	}
 
 	mountServer() {
