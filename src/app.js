@@ -1,7 +1,9 @@
 import fs from 'fs';
-import jsonServer from "json-server";
+import dotenv from 'dotenv';
+import jsonServer from 'json-server';
 class App {
 	constructor() {
+		dotenv.config({ path: `${__dirname}/../.env` });
 		this.port = process.env.PORT || 4000;
 	}
 
@@ -17,7 +19,7 @@ class App {
 			const files = {
 				...previousURL,
 				...currentURL
-			}
+			};
 
 			return files;
 		}, {});
@@ -29,16 +31,16 @@ class App {
 		try {
 			this.mountServer();
 			const server = jsonServer.create();
-			const router = jsonServer.router("./src/database/db.json");
+			const router = jsonServer.router('./src/database/db.json');
 			const middlewares = jsonServer.defaults();
 
 			server.use(middlewares);
 			server.use(router);
 			server.listen(this.port);
 
-			console.log("Success!");
+			console.log('Success!');
 		} catch (error) {
-			console.log("An error ocurred!", error);
+			console.log('An error ocurred!', error);
 		}
 	}
 

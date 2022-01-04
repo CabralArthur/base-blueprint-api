@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "Repository to storage my blueprint api`s with JSON server.",
   "main": "server.js",
-  "type": "module",
   "scripts": {
-    "start": "node --experimental-json-modules index.js",
-    "start:dev": "nodemon index.js",
+    "start": "NODE_ENV=production node --experimental-json-modules index.js",
+    "start:dev": "NODE_ENV=development --delay 500ms --inspect --exec babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,9 +20,15 @@
   },
   "homepage": "https://github.com/CabralArthur/base-mock-api#readme",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "json-server": "^0.17.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@babel/node": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/register": "^7.16.7",
+    "eslint": "^8.6.0"
   }
 }
