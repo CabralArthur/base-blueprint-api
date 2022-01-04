@@ -1,9 +1,7 @@
 import fs from 'fs';
-import dotenv from 'dotenv';
 import jsonServer from 'json-server';
 class App {
 	constructor() {
-		dotenv.config({ path: `${__dirname}/../.env` });
 		this.port = process.env.PORT || 4000;
 	}
 
